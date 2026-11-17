@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcebe6"/>
+      <stop offset="1" stop-color="#eef4f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <rect y="230" width="400" height="70" fill="#cfe1d9"/>
+  <g fill="#b5cfc4">
+    <rect x="40" y="120" width="70" height="110"/>
+    <rect x="300" y="100" width="64" height="130"/>
+  </g>
+  <g transform="translate(140 95)">
+    <path d="M60 0 125 55H-5z" fill="#0b6e4f"/>
+    <rect x="8" y="55" width="104" height="80" fill="#ffffff"/>
+    <rect x="22" y="70" width="24" height="24" fill="#cfe1d9"/>
+    <rect x="74" y="70" width="24" height="24" fill="#cfe1d9"/>
+    <rect x="48" y="97" width="24" height="38" fill="#f29e4c"/>
+  </g>
+  <text x="200" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#5c7a6e">Brak zdjęcia</text>
+</svg>

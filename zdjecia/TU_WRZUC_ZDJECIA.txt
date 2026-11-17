@@ -1,0 +1,3 @@
+Do tego folderu kopiuj zdjęcia ogłoszeń.
+Nazwy plików muszą być takie same jak w panelu (wielkość liter ma znaczenie na hostingu).
+Najlepiej używać nazw bez spacji i polskich znaków, np. krakow-mieszkanie-1.jpg

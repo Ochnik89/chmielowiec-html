@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ogłoszenie – Nieruchomości</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="ogloszenie">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 15.5 16 9l8 6.5V24a1 1 0 0 1-1 1h-4.5v-5.5h-5V25H9a1 1 0 0 1-1-1z" fill="#fff"/></svg>
+      <span>Nieruchomości</span>
+    </a>
+    <nav class="main-nav" aria-label="Główna nawigacja">
+      <a href="ogloszenia.html?transakcja=sprzedaz" data-nav="sprzedaz">Sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=wynajem" data-nav="wynajem">Wynajem</a>
+      <a href="ogloszenia.html" class="hide-sm" data-nav="">Wszystkie</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container section" id="listing"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Nieruchomości</strong>
+      <p>Ogłoszenia nieruchomości na sprzedaż i wynajem.</p>
+    </div>
+    <div class="footer-links">
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=mieszkanie">Mieszkania na sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=wynajem&typ=mieszkanie">Mieszkania na wynajem</a>
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=dom">Domy na sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=dzialka">Działki</a>
+    </div>
+    <p class="copy">© <span data-year></span> Nieruchomości</p>
+  </div>
+</footer>
+
+<script src="dane/ogloszenia.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

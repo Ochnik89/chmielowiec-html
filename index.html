@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nieruchomości – mieszkania i domy na sprzedaż i wynajem</title>
+  <meta name="description" content="Ogłoszenia nieruchomości – mieszkania, domy, działki i lokale na sprzedaż i wynajem.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M8 15.5 16 9l8 6.5V24a1 1 0 0 1-1 1h-4.5v-5.5h-5V25H9a1 1 0 0 1-1-1z" fill="#fff"/></svg>
+      <span>Nieruchomości</span>
+    </a>
+    <nav class="main-nav" aria-label="Główna nawigacja">
+      <a href="ogloszenia.html?transakcja=sprzedaz" data-nav="sprzedaz">Sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=wynajem" data-nav="wynajem">Wynajem</a>
+      <a href="ogloszenia.html" class="hide-sm" data-nav="">Wszystkie</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Znajdź swoje nowe miejsce</h1>
+      <p class="hero-sub">Mieszkania, domy, działki i lokale – na sprzedaż i wynajem.</p>
+
+      <form class="hero-search" action="ogloszenia.html" method="get">
+        <div class="tabs" role="radiogroup" aria-label="Rodzaj transakcji">
+          <label><input type="radio" name="transakcja" value="sprzedaz" checked><span>Kup</span></label>
+          <label><input type="radio" name="transakcja" value="wynajem"><span>Wynajmij</span></label>
+        </div>
+        <div class="hero-fields">
+          <label class="field">
+            <span>Rodzaj nieruchomości</span>
+            <select name="typ">
+              <option value="">Wszystkie</option>
+              <option value="mieszkanie">Mieszkanie</option>
+              <option value="dom">Dom</option>
+              <option value="dzialka">Działka</option>
+              <option value="lokal">Lokal użytkowy</option>
+              <option value="garaz">Garaż</option>
+            </select>
+          </label>
+          <label class="field field-grow">
+            <span>Lokalizacja</span>
+            <input type="text" name="lokalizacja" placeholder="Miasto, dzielnica lub ulica">
+          </label>
+          <label class="field">
+            <span>Cena do (zł)</span>
+            <input type="text" name="cenaDo" inputmode="numeric" placeholder="np. 600 000">
+          </label>
+          <button class="btn btn-primary btn-lg" type="submit">Szukaj</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="section-title">Przeglądaj kategorie</h2>
+    <div class="categories">
+      <a class="category" href="ogloszenia.html?transakcja=sprzedaz&typ=mieszkanie"><span class="category-label">Mieszkania na sprzedaż</span><span class="category-count" data-count="sprzedaz:mieszkanie"></span></a>
+      <a class="category" href="ogloszenia.html?transakcja=wynajem&typ=mieszkanie"><span class="category-label">Mieszkania na wynajem</span><span class="category-count" data-count="wynajem:mieszkanie"></span></a>
+      <a class="category" href="ogloszenia.html?transakcja=sprzedaz&typ=dom"><span class="category-label">Domy na sprzedaż</span><span class="category-count" data-count="sprzedaz:dom"></span></a>
+      <a class="category" href="ogloszenia.html?transakcja=wynajem&typ=dom"><span class="category-label">Domy na wynajem</span><span class="category-count" data-count="wynajem:dom"></span></a>
+      <a class="category" href="ogloszenia.html?transakcja=sprzedaz&typ=dzialka"><span class="category-label">Działki</span><span class="category-count" data-count="sprzedaz:dzialka"></span></a>
+      <a class="category" href="ogloszenia.html?transakcja=wynajem&typ=lokal"><span class="category-label">Lokale na wynajem</span><span class="category-count" data-count="wynajem:lokal"></span></a>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <h2 class="section-title">Najnowsze ogłoszenia</h2>
+      <a href="ogloszenia.html" class="link">Zobacz wszystkie →</a>
+    </div>
+    <div id="latest"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Nieruchomości</strong>
+      <p>Ogłoszenia nieruchomości na sprzedaż i wynajem.</p>
+    </div>
+    <div class="footer-links">
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=mieszkanie">Mieszkania na sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=wynajem&typ=mieszkanie">Mieszkania na wynajem</a>
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=dom">Domy na sprzedaż</a>
+      <a href="ogloszenia.html?transakcja=sprzedaz&typ=dzialka">Działki</a>
+    </div>
+    <p class="copy">© <span data-year></span> Nieruchomości</p>
+  </div>
+</footer>
+
+<script src="dane/ogloszenia.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
